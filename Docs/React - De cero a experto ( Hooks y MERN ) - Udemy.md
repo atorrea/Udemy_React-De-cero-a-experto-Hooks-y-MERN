@@ -36,3 +36,93 @@
     - [ES7 React/Redux](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
     - [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
     - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+# <font color="red">Sección 2: Introducción a React y conceptos generales</font>
+## <font color="yellow">5. Introducción a la sección</font>
+
+## <font color="yellow">6. Temas puntuales de la sección</font>
+
+**¿Qué aprenderemos en esta sección?**
+
+- ¿Qué es React?
+- Conceptos generales
+- Babel
+- JSX
+
+Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a perderle el miedo a React rápidamente
+
+## <font color="yellow">7. ¿Qué es React?</font>
+
+Librería JS para crear aplicaciones.
+
+Declarativa.
+
+Eficiente.
+
+Predecible (todo fluye en una sola vía).
+
+Componentes: piezas de código encapsuladas que pueden tener estado (permite dividir una aplicación muy grande).
+
+Server-side con Node.
+
+Aplicaciones móviles con React Native.
+
+```jsx
+// Aplicacion en React mas sencilla posible
+// JSX = JS + XML
+
+const divRoot = document.querySelector('#root'); // se hace referencia a un div con id="root"
+ReactDOM.render( <h1>Hola Mundo</h1> , divRoot ); // inyecta un html dentro de la etiqueta referenciada
+
+//cont h1Tag = <h1>Hola Mundo</h1>; // variable/contante que contiene la etiqueta
+//ReactDOM.render( h1Tag, divRoot ); // llama a una funcion de React para mostrar la "algo" en el html
+
+//const h1Tag = document.createElement('h1', null, `Hola, soy ${ nombre }`);
+    // version similar al hola mundo escrito en JSX (en React se simplifica usando simples etiquetas)
+```
+
+## <font color="yellow">8. Primeros pasos en React</font>
+
+Primera aplicación completa con React:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Cargat React -->
+    <script crossorigin src="<https://unpkg.com/react@16/umd/react.production.min.js>"></script>
+    <script crossorigin src="<https://unpkg.com/react-dom@16/umd/react-dom.production.min.js>"></script>
+    <!-- Importacion de babel (permite convertir javascript moderno a javascript comprensible por el navegador) -->
+    <script src="<https://unpkg.com/babel-standalone@6/babel.min.js>"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ReactApp</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        const divRoot = document.querySelector('#root');
+
+        const nombre = 'Alberto';
+        const h1Tag = <h1>Hola Mundo, soy { nombre }!</h1>;
+
+        ReactDOM.render( h1Tag, divRoot );
+
+    </script>
+    
+</body>
+</html>
+```
+
+## <font color="yellow">9. Introducción a Babel</font>
+
+Babel: permite usar las últimas innovaciones del ECMAScript en cualquier navegador aunque este no soporte aun estas mejoras (incompatibilidad).
+
+- [https://babeljs.io/](https://babeljs.io/)
+
+![babel](./media/Untitled.png)

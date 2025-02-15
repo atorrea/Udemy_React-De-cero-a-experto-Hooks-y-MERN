@@ -37,10 +37,12 @@
     - [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
     - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
-# <font color="red">Sección 2: Introducción a React y conceptos generales</font>
-## <font color="yellow">5. Introducción a la sección</font>
+## <font color="yellow">5. ¡Únete a Nuestra Comunidad de DevTalles en Discord!</font>
 
-## <font color="yellow">6. Temas puntuales de la sección</font>
+# <font color="red">Sección 2: Introducción a React y conceptos generales</font>
+## <font color="yellow">6. Introducción a la sección</font>
+
+## <font color="yellow">7. Temas puntuales de la sección</font>
 
 **¿Qué aprenderemos en esta sección?**
 
@@ -51,7 +53,7 @@
 
 Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a perderle el miedo a React rápidamente
 
-## <font color="yellow">7. ¿Qué es React?</font>
+## <font color="yellow">8. ¿Qué es React?</font>
 
 Librería JS para crear aplicaciones.
 
@@ -81,7 +83,7 @@ ReactDOM.render( <h1>Hola Mundo</h1> , divRoot ); // inyecta un html dentro de l
     // version similar al hola mundo escrito en JSX (en React se simplifica usando simples etiquetas)
 ```
 
-## <font color="yellow">8. Primeros pasos en React</font>
+## <font color="yellow">9. Primeros pasos en React</font>
 
 Primera aplicación completa con React:
 
@@ -119,7 +121,7 @@ Primera aplicación completa con React:
 </html>
 ```
 
-## <font color="yellow">9. Introducción a Babel</font>
+## <font color="yellow">10. Introducción a Babel</font>
 
 Babel: permite usar las últimas innovaciones del ECMAScript en cualquier navegador aunque este no soporte aun estas mejoras (incompatibilidad).
 
@@ -129,11 +131,11 @@ Babel: permite usar las últimas innovaciones del ECMAScript en cualquier navega
 
 # <font color="red">Sección 3: Introducción a JavaScript moderno</font>
 
-## <font color="yellow">10. Introducción a la sección</font>
+## <font color="yellow">11. Introducción a la sección</font>
 
 Tema fundamental: desestructuración
 
-## <font color="yellow">11. Temas puntuales de la sección</font>
+## <font color="yellow">12. Temas puntuales de la sección</font>
 
 ### **¿Temas de la sección?**
 
@@ -152,7 +154,13 @@ El objetivo es tener las bases que permitan diferenciar fácilmente qué es prop
 
 Estos conceptos y ejercicios ayudarán a suavizar la curva de aprendizaje de React.
 
-## <font color="yellow">12. Inicio de proyecto - Bases de JavaScript</font>
+## <font color="yellow">13. Nota Importante Create React App - CRA</font>
+
+Al intentar crear un proyecto con CRA actualmente existe un error por incompatibilidad entre dependencias. Esta ya no es una forma recomendada de crear aplicaciones de React por lo cual se recomienda hacer uso de Vite.
+
+Es posible crear el proyecto usando el template de vanilla JavaScript, React no se usará hasta la siguiente sección.
+
+## <font color="yellow">14. Inicio de proyecto - Bases de JavaScript</font>
 
 <mark class="orange">Al intentar crear un proyecto con CRA actualmente se encuentra un error por incompatibilidad entre dependencias. Esta ya no es una forma recomendada de crear aplicaciones de React por lo cual se recomienda [**hacer uso de Vite**](https://vite.dev/guide/).</mark>
 
@@ -177,7 +185,7 @@ Estos conceptos y ejercicios ayudarán a suavizar la curva de aprendizaje de Rea
     - Es necesario crear un archivo .env sobre la raiz del proyecto y escribir en él: FAST_REFRESH=false
     - Ejecutar de nuevo en la consola sobre la carpeta del proyecto: npm start
 
-## <font color="yellow">13. Variables y constantes</font>
+## <font color="yellow">15. Variables y constantes</font>
 
 No se debe usar var, únicamente let y const
 
@@ -203,7 +211,7 @@ Tanto let como const únicamente funcionan dentro de su scope
     console.log( valorDado );
 ```
 
-## <font color="yellow">14. Template String</font>
+## <font color="yellow">16. Template String</font>
 
 Uso de Backtick / Back Quote → : permiten añadir código javascript mediante ${ }
 
@@ -229,7 +237,7 @@ function getSaludo( nombre ) {
 console.log( `Este es un texto: ${ getSaludo( nombreCompleto2 ) }`);
 ```
 
-## <font color="yellow">15. Objetos lilterales</font>
+## <font color="yellow">17. Objetos lilterales</font>
 
 Copia de un objeto anterior sobre un nuevo objeto al que se le pasa el objeto anterior sobre un campo homonimo al nombre del objeto anterior:
 
@@ -268,7 +276,7 @@ console.log( persona2 );
 console.log( persona3 );
 ```
 
-## <font color="yellow">16. Arreglos</font>
+## <font color="yellow">18. Arreglos</font>
 
 Ejecutar funciones sobre todos los elementos de un array → **Array.prototype.map():** [https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
@@ -299,7 +307,7 @@ const arreglo3 = arreglo2.map( function ( valorPosicion ) { // la funcion del pr
 console.log( arreglo3 );
 ```
 
-## <font color="yellow">17. Funciones</font>
+## <font color="yellow">19. Funciones</font>
 
 ```jsx
 // Funciones en JS
@@ -354,7 +362,7 @@ const saludar7 = () => ({
 console.log( saludar7() );
 ```
 
-## <font color="yellow">18. Desestructuación de Objetos</font>
+## <font color="yellow">20. Desestructuación de Objetos</font>
 
 Documentación desestructuración: [](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)[https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignmen](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignmen)
 
@@ -439,7 +447,7 @@ const { nombreClave, anios, latlng:{ lat, lng } } = useContext( persona );
 console.log( nombreClave, anios, lat, lng );
 ```
 
-## <font color="yellow">19. Desestructuación de Arreglos</font>
+## <font color="yellow">21. Desestructuación de Arreglos</font>
 
 ```jsx
 const personajes = ['Goku','Vegeta','Trunks'];
@@ -481,7 +489,7 @@ console.log( nombre );
 setNombre(); // Sintaxis llamada a la funcion desestructurada
 ```
 
-## <font color="yellow">20. Import, export y funciones comunes de arreglos</font>
+## <font color="yellow">22. Import, export y funciones comunes de arreglos</font>
 
 ```jsx
 /** data/heroes.js **/
@@ -549,7 +557,7 @@ console.log( getHeroesByOwner( 'DC' ) );
 console.log( getHeroesByOwner( 'Marvel' ) );
 ```
 
-## <font color="yellow">21. Múltiples exportaciones y exportaciones por defecto</font>
+## <font color="yellow">23. Múltiples exportaciones y exportaciones por defecto</font>
 
 Tres modos de exportación por defecto:
 
@@ -606,7 +614,7 @@ console.log( heroes );
 console.log( owners );
 ```
 
-## <font color="yellow">22. Promesas</font>
+## <font color="yellow">24. Promesas</font>
 
 const promesa = new Promise(); // código básico de una promesa
 
@@ -667,7 +675,7 @@ getHeroeByIdAsync( 30 )
                             // siguiente funcion a la que se llama directamente se puede escribir asi
 ```
 
-## <font color="yellow">23. Fetch API</font>
+## <font color="yellow">25. Fetch API</font>
 
 Fetch es el nombre de una nueva API para Javascript con la cuál podemos realizar peticiones HTTP asíncronas utilizando promesas y de forma que el código sea un poco más sencillo y menos verboso. La forma de realizar una petición es muy sencilla, básicamente se trata de llamar a fetch y pasarle por parámetro la URL de la petición a realizar.
 
@@ -700,7 +708,7 @@ peticion
     .catch( console.warn );
 ```
 
-## <font color="yellow">24. Async - Await</font>
+## <font color="yellow">26. Async - Await</font>
 
 ```jsx
 /** index.js **/
@@ -737,7 +745,7 @@ const getImagen = async() => { // los await siempre tienen que estar dentro de u
 getImagen();
 ```
 
-## <font color="yellow">25. Operador condicional ternario</font>
+## <font color="yellow">27. Operador condicional ternario</font>
 
 ```jsx
 /** index.js **/
@@ -759,10 +767,692 @@ const mensajeSoloSiActivo = !activo && 'Activo'; // permite hacer un if in line 
 console.log(mensajeSoloSiActivo);
 ```
 
-## <font color="yellow">26. Nota sobre JavaScript</font>
+## <font color="yellow">28. Nota sobre JavaScript</font>
 
 Consultar posibles dudas → [https://developer.mozilla.org/es/](https://developer.mozilla.org/es/)
 
-## <font color="yellow">27. Código fuente de la sección</font>
+## <font color="yellow">29. Código fuente de la sección</font>
 
 Repositorio con el código fuente de la sección: [https://github.com/Klerith/react-intro-javascript](https://github.com/Klerith/react-intro-javascript)
+
+# <font color="red">Sección 4: Primeros pasos en React</font>
+
+## <font color="yellow">30. Introducción a la sección</font>
+
+## <font color="yellow">31. Temas puntuales de la sección</font>
+
+### ¿Qué veremos en esta sección?
+
+- Nuestra primera aplicación - Hola Mundo
+- Exposiciones sobre los componentes
+- Creación de componentes (Functional Components)
+- Propiedades - Props
+- Impresiones en el HTML
+- PropTypes
+- DefaultProps
+- Introducción general a los Hooks
+- useState
+
+Es una sección importante, especialmente para todos los que están empezando de cero en React, ya que dará las bases de cómo segmentar la lógica de nuestra aplicación en pequeñas piezas más fáciles de mantener.
+
+## <font color="yellow">32. ¿Qué son los componentes?</font>
+
+Un componente en React es un pequeña pieza de código encapsulado reutilizable que puede tener estado o no.
+
+Realiza una función específica y puede tener otros componentes dentro.
+
+El estado es como se encuentra la información del componente en un momento dado.
+
+## <font color="yellow">33. Primera aplicación de React</font>
+
+Se crean dos proyectos:
+
+- 03-counter-app-vite
+
+	![yarn create vite](./media/Untitled2.png)
+
+	![yarn](./media/Untitled3.png)
+
+    ```powershell
+    yarn dev
+    ```
+    
+- 03-counter-app-cra
+    
+    [https://create-react-app.dev/](https://create-react-app.dev/)
+    
+    ```powershell
+    npx create-react-app my-app
+    npx start
+    ```
+    
+
+## <font color="yellow">34. Estructura de directorios - CRA</font>
+
+Se caracteriza por tener un paquete: “<font color="cyan">package-lock.json</font>”:
+
+<font color="cyan">node_modules</font>: módulos de react en desarrollo, únicamente una fracción de los mismos se publicará a producción (no se debe modificar).
+
+<font color="cyan">public</font>: carpeta donde se ubica la aplicación inicial al instalar react.
+
+<font color="cyan">index.html</font>: el objetivo de CRA es crear una single page application por lo que todas las aplicaciones creadas van a ser montadas en este archivo.
+
+<font color="cyan">robots.txt</font>: toda la información para los bots de Google [https://developers.google.com/search/docs/advanced/robots/intro?hl=es&visit_id=637833102760362344-3108160836&rd=1](https://developers.google.com/search/docs/advanced/robots/intro?hl=es&visit_id=637833102760362344-3108160836&rd=1).
+
+<font color="cyan">src</font>: carpeta desde donde se inicia la aplicación renderizada sobre el contenido de public.
+
+<font color="cyan">App.css</font>: archivo de estilos importado en el index.js
+
+<font color="cyan">App.js</font>: archivo importado en el index.js
+
+<font color="cyan">App.test.js</font>: archivo para la realización de pruebas vinculado al App.js
+
+<font color="cyan">index.css</font>: archivo general de estilos
+
+<font color="cyan">index.js</font>: archivo inicial de la aplicación
+
+<font color="cyan">logo.svg</font>: vector que se visualiza en el centro de la pantalla al renderizar la aplicación
+
+<font color="cyan">reportWebVitals.js</font>: archivo para posibilitar la creación de una aplicación web progresiva → [https://developers.google.com/web/ilt/pwa](https://developers.google.com/web/ilt/pwa)
+
+<font color="cyan">setupTest.js</font>: archivo que importa las librerías que posibilitan hacer test
+
+<font color="cyan">.gitignore</font>: enumera los archivos y directorios de los que se desea que git no de seguimiento.
+
+<font color="cyan">package-lock.json</font>: no debe ser modificado por el desarroyador, gestiona los modulos del node_modules.
+
+<font color="cyan">package.json</font>: configuraciones y scripts de node → más información en [https://create-react-app.dev/docs/available-scripts/](https://create-react-app.dev/docs/available-scripts/).
+- Contiene la información de la aplicación como nombre, versión, scripts(comandos automáticos de lanzamiento).
+- Aquí también irán referenciadas nuestras dependencias de desarrollo. Se modifica mediante comandos.
+
+<font color="cyan">README.md</font>: archivo de documentación del proyecto.
+
+<font color="cyan">.env</font>: archivo añadido por mí para permitir la actualización automática de la web con cada cambio.
+
+![CRA](./media/Untitled4.png)
+
+## <font color="yellow">35. Estructura de directorios - Vite</font>
+
+Tiene menos dependencias que CRA pero obliga a configurarlas manualmente si finalmente se necesitan.
+
+Refresca los cambios más rápido.
+
+<mark class="orange">IMPORTANTE: ES SOBRE ESTA VERSIÓN QUE SE VA A REALIZAR EL CURSO</mark>
+
+<font color="cyan">package.json</font>: menos dependencias que en CRA.
+
+<font color="cyan">index.html</font>: directamente en la raiz del proyecto.
+
+<font color="cyan">vite.config.js</font>: permite realizar configuraciones propias de vite.
+
+<font color="cyan">yarn.lock</font>: indica que el proyecto ha sido creado con yarn, no mezclar yarn con npm/npx.
+
+![Vite](./media/Untitled5.png)
+
+## <font color="yellow">36. Hola Mundo en React</font>
+
+```powershell
+yarn dev
+```
+
+![yarn dev](./media/Untitled6.png)
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function App() { // esto es un componente
+  // document.createElement...
+  return (<h1>Hola Mundo</h1>);
+}
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+
+## <font color="yellow">37. Nuestro primer Componente</font>
+
+```jsx
+/** HelloWordApp.jsx **/
+
+// function App() {
+//     return (<h1>Hola Mundo</h1>);
+// }
+// export default App;
+
+// comando rafc (crea automaticamente el componente)
+
+// export const HelloWordApp = () => { // se llama functional component ya que esta basado en una funcion
+//   return (
+//     <h1>Hello Word App</h1>
+//   )
+// }
+
+export const HelloWordApp = () => <h1>Hello Word App</h1>;
+```
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelloWordApp } from './HelloWordApp'; // no hay exportacion por defecto
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <HelloWordApp />
+  </React.StrictMode>
+);
+```
+
+
+## <font color="yellow">38. Tarea - Crear un nuevo componente</font>
+
+```jsx
+/** FirstApp.jsx **/
+
+export const FirstApp = () => <div>First App</div>;
+```
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelloWordApp } from './HelloWordApp';
+import { FirstApp } from './FirstApp';
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <HelloWordApp />
+    <FirstApp />
+  </React.StrictMode>
+);
+```
+
+## <font color="yellow">39. Retornar elementos en el Componente - Fragment</font>
+
+```jsx
+/** FirstApp.jsx **/
+
+// export const FirstApp = () => { // div adicional no deseado
+//   return (
+//     <div>
+//         <h1>Fernando</h1>
+//         <p>Spy un subtitulo</p>
+//     </div>
+//   )
+// };
+
+// import { Fragment } from 'react';
+// export const FirstApp = () => { // necesita la importacion de Fragment
+//     return (
+//       <Fragment>
+//           <h1>Fernando</h1>
+//           <p>Spy un subtitulo</p>
+//       </Fragment>
+//     )
+// };
+
+export const FirstApp = () => { // etiqueta vacia, no necesita importacion (cada fragmento debe estar dentro de un unico elemento)
+    return (
+      <>
+          <h1>Fernando</h1>
+          <p>Soy un subtitulo</p>
+      </>
+    )
+};
+```
+
+## <font color="yellow">40. Impresión de variables en el HTML</font>
+
+```jsx
+/** FirstApp.jsx **/
+
+const newMessage = 'Fernando!!!'; // mejor que se encuentre fuera del componente
+  // el scope no varia ya que sigue encapsulado en el elemento de codigo
+  // sin embargo react no lo reprocesara cada vez que se produzca un refresco del componente
+
+const newMessageBoolean = true; // no se renderiza
+const newMessageArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // se renderizan objetos separados (<p>"1""2""3""4""5""6""7""8""9"</p>)
+const newMessageObject = { // si se intenta renderizar un objeto pasandolo como un hijo de react toda la aplicacion fallara 
+  message: 'Hola Mundo',
+  title: 'Fernando'
+}
+const newMessageFunction = () => 'Resultado funcion'; // si se desea que al renderizar se ejecute la funcion habria que colocarla dentro del fragmento
+
+export const FirstApp = () => {
+  return (
+    <>
+      <h1>{ newMessage }</h1>
+      <p>{ newMessageBoolean }</p>
+      <p>{ newMessageArray }</p>
+      <p>{ newMessageObject.message }</p>
+      <code>{ JSON.stringify(newMessageObject) }</code> {/* Esto seria un comentario que no se renderizaria en la web */}
+      <p>{ newMessageFunction() }</p>
+      <p>Soy un subtitulo</p>
+    </>
+  )
+};
+```
+
+## <font color="yellow">41. Colocar estilos de CSS</font>
+
+```css
+/** styles.css **/
+
+html, body {
+    background-color: #21232A;
+    color: white;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.3rem;
+    padding: 70px;
+}
+```
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelloWordApp } from './HelloWordApp';
+import { FirstApp } from './FirstApp';
+
+import './styles.css'; // importacion global de los estilos
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <HelloWordApp />
+    <FirstApp />
+  </React.StrictMode>
+);
+```
+
+## <font color="yellow">42. Comunicación entre componentes - Props</font>
+
+```jsx
+/** FirstApp.jsx **/
+
+// export const FirstApp = ( props ) => { // las props permiten un canal de comunicacion entre el componente padre y sus hijos
+//   console.log( props );
+
+//   return (
+//     <>
+//       <h1>{ props.title }</h1>
+//       <p>Soy un subtitulo</p>
+//     </>
+//   )
+// };
+
+export const FirstApp = ({ title }) => { // lo normal es que las props se obtengan ya desestructuradas
+  console.log( title );
+
+  return (
+    <>
+      <h1>{ title }</h1>
+      <p>Soy un subtitulo</p>
+    </>
+  )
+};
+```
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelloWordApp } from './HelloWordApp';
+import { FirstApp } from './FirstApp';
+
+import './styles.css';
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <HelloWordApp />
+    <FirstApp title="Hola, soy Goku" subtitle="123" number={123} />
+      {/* el subtitle se pasa como un string mientras que number si seria un numero */}
+  </React.StrictMode>
+);
+```
+
+## <font color="yellow">43. PropTypes</font>
+
+Con typescript no son necesarias.
+
+```powershell
+yarn add prop-types
+```
+
+```jsx
+/** FirstApp.jsx **/
+
+// export const FirstApp = ({ title, subtitle }) => {
+//   if ( !title ) { // obligar a enviar el titulo (mala forma de hacerlo)
+//     throw new Error('El title no existe');
+//   }
+
+//   return (
+//     <>
+//       <h1>{ title }</h1>
+//       <p>{ subtitle }</p>
+//     </>
+//   )
+// };
+
+import PropTypes from "prop-types";
+
+export const FirstApp = ({ title = "valor por defecto", subtitle }) => {
+  if ( !title ) { // obligar a enviar el titulo
+    throw new Error('El title no existe');
+  }
+
+  return (
+    <>
+      <h1>{ title }</h1>
+      <p>{ subtitle }</p>
+    </>
+  )
+};
+
+FirstApp.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string.isRequired,
+  number: PropTypes.number
+};
+```
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelloWordApp } from './HelloWordApp';
+import { FirstApp } from './FirstApp';
+
+import './styles.css';
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <HelloWordApp />
+    <FirstApp title="Hola, soy Goku" subtitle="123" number={123} bool />
+      {/* mandar una property sin valor es igual a manddar un true */}
+  </React.StrictMode>
+);
+```
+
+
+## <font color="yellow">44. DefaultProps</font>
+
+```jsx
+/** FirstApp.jsx **/
+
+import PropTypes from "prop-types";
+
+export const FirstApp = ({ title, subtitle, name }) => {
+  if ( !title ) { // obligar a enviar el titulo
+    throw new Error('El title no existe');
+  }
+
+  return (
+    <>
+      <h1>{ title }</h1>
+      <p>{ subtitle }</p>
+      <p>{ name }</p>
+    </>
+  )
+};
+
+FirstApp.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string.isRequired,
+  number: PropTypes.number,
+}
+
+// se procesan antes de los propTypes por lo que en caso de que
+// algo sea requerido y tenga un valor por defecto jamas dara error
+// aunque no exista a no ser que sea por el tipo
+FirstApp.defaultProps = {
+  title: 'No hay titulo',
+  name: 'otro',
+}
+// es posible incluir properties que no existan
+```
+
+
+## <font color="yellow">45. Tarea - Componente CounterApp</font>
+
+1. Crear un nuevo componente dentro de la carpeta SRC llamado `CounterApp`
+    
+2. El CounterApp debe de ser un **Functional Component**
+    
+3. El contenido del **CounterApp** debe de ser:
+    
+    ```jsx
+        <h1>CounterApp</h1>
+        <h2> { value } </h2>
+    ```
+    
+4. Donde `"value"` es una propiedad enviada desde el padre hacia el componente **CounterApp** **(Debe ser númerica validada con PropTypes)**
+    
+5. Reemplazar en el index.js ó main.jsx el componente de `<PrimeraApp />` por el componente `<CounterApp />` (no se olviden del value que debe de ser un número)
+    
+6. Asegúrense de no tener errores ni warnings (Cualquier warning no usado, comentar el código)
+    
+
+```jsx
+/** CounterApp.jsx **/
+
+import PropTypes from 'prop-types';
+
+export const CounterApp = ({ value }) => {
+  return (
+    <>
+      <h1>CounterApp</h1>
+      <h2>{ value }</h2>
+    </>
+  );
+}
+
+CounterApp.propTypes = {
+  value: PropTypes.number,
+}
+```
+
+```jsx
+/** main.jsx **/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelloWordApp } from './HelloWordApp';
+import { CounterApp } from './CounterApp';
+
+import './styles.css';
+
+ReactDOM.createRoot( document.getElementById('root') ).render(
+  <React.StrictMode>
+    <HelloWordApp />
+    <CounterApp value={123} />
+  </React.StrictMode>
+);
+```
+
+
+## <font color="yellow">46. Evento click (Eventos en general)</font>
+
+Documentación: [https://es.legacy.reactjs.org/docs/events.html](https://es.legacy.reactjs.org/docs/events.html)
+
+```css
+/** styles.css **/
+
+html, body {
+    background-color: #21232A;
+    color: white;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.3rem;
+    padding: 70px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+```
+
+```jsx
+/** CounterApp.jsx **/
+
+import PropTypes from 'prop-types';
+
+function handleAdd(event) {
+  console.log(event)
+}
+
+const handleAdd2 = (event, newValue) => {
+  console.log(newValue)
+};
+
+export const CounterApp = ({ value }) => {
+  return (
+    <>
+      <h1>CounterApp</h1>
+      <h2> { value } </h2>
+
+      <button onClick={ function() { console.log('+1') }}>
+        +1
+      </button>
+
+      <button onClick={ function(event) { console.log(event) }}>
+        +1
+      </button>
+
+      <button onClick={ (event) => handleAdd(event) }>
+        +1
+      </button>
+
+      <button onClick={ handleAdd }>
+        +1
+      </button>
+
+      <button onClick={ (event) => handleAdd2(event, 'hola') }>
+        +1
+      </button>
+    </>
+  );
+}
+
+CounterApp.propTypes = {
+  value: PropTypes.number,
+}
+```
+
+
+## <font color="yellow">47. useState - Hook</font>
+
+Documentación: [https://es.legacy.reactjs.org/docs/hooks-intro.html](https://es.legacy.reactjs.org/docs/hooks-intro.html)
+
+Ejercicio: [https://github.com/Klerith/react-intro-javascript/blob/master/src/bases/07-deses-arr.js](https://github.com/Klerith/react-intro-javascript/blob/master/src/bases/07-deses-arr.js)
+
+```jsx
+/** CounterApp.jsx **/
+
+// import PropTypes from 'prop-types';
+
+// export const CounterApp = ({ value }) => {
+//   const handleAdd = () => {
+//     console.log('+1');
+//     value = 1000;
+//     console.log(value); // este valor si cambia
+//   };
+
+//   return (
+//     <>
+//       <h1>CounterApp</h1>
+//       <h2> { value } </h2> {/* este valor no cambia */}
+
+//       <button onClick={ handleAdd }>
+//         +1
+//       </button>
+//     </>
+//   );
+// }
+
+// CounterApp.propTypes = {
+//   value: PropTypes.number,
+// }
+
+import { useState } from 'react'
+import PropTypes from 'prop-types';
+
+export const CounterApp = ({ value }) => {
+  const [ counter, setCounter ] = useState( value ); // value es el valor inicial
+    // counter no se puede modificar directamente por que es una constante
+    // se utiliza setCounter para modificar su valor
+
+  const handleAdd = () => {
+    setCounter( counter + 1 );
+    setCounter( (c) => c + 1 ); // otra forma de hacerlo sin escribir el counter
+      // en las nuevas versiones de react aunque estemos modificando 2 veces el counter
+      // solo se renderiza una vez al final de la funcion handleAdd
+  };
+
+  return (
+    <>
+      <h1>CounterApp</h1>
+      <h2> { counter } </h2> {/* ahora si cambia */}
+
+      <button onClick={ handleAdd }>
+        +1
+      </button>
+    </>
+  );
+}
+
+CounterApp.propTypes = {
+  value: PropTypes.number,
+}
+```
+
+
+## <font color="yellow">48. handleSubtract y handleReset</font>
+
+```jsx
+/** CounterApp.jsx **/
+
+import { useState } from 'react'
+import PropTypes from 'prop-types';
+
+export const CounterApp = ({ value }) => { // no cambiar el valor de la property para permitir reset
+  const [ counter, setCounter ] = useState( value );
+
+  const handleAdd = () => setCounter( counter + 1 );
+  const handleSubtract = () => setCounter( counter - 1 );
+  const handleReset = () => setCounter( value );
+
+  return (
+    <>
+      <h1>CounterApp</h1>
+      <h2> { counter } </h2>
+
+      <button onClick={ handleAdd }> +1 </button>
+      <button onClick={ handleSubtract }> -1 </button>
+      <button onClick={ handleReset }> Reset </button>
+    </>
+  );
+}
+
+CounterApp.propTypes = {
+  value: PropTypes.number,
+}
+```
+
+
+## <font color="yellow">49. Código fuente de la sección</font>
+
+[https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-4](https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-4)
